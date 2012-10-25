@@ -1,0 +1,6 @@
+*.pro.user
+*.swp
+*.pyc
+*.so
+
+g4/build/*
