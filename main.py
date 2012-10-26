@@ -16,6 +16,7 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+import sys
 
 import Geant4
 import g4 
@@ -38,5 +39,9 @@ if __name__ == "__main__":
     Geant4.gRunManager.SetUserAction(stepping_action)
 
     Geant4.gRunManager.Initialize()
-    Geant4.gRunManager.BeamOn(1000)
+    Geant4.gVisManager.Initialize()
+    Geant4.gApplyUICommand("/control/execute %s" % sys.argv[1])
+    Geant4.StartUISession()
+
+    #Geant4.gRunManager.BeamOn(1000)
     

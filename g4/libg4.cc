@@ -30,7 +30,7 @@
 
 // BOOST/PYTHON //
 #include "boost/python.hpp"
-//#include "pyublas/numpy.hpp"
+#include "pyublas/numpy.hpp"
 
 
 using namespace boost::python;
