@@ -32,9 +32,6 @@ if __name__ == "__main__":
     primary_generator = g4.PrimaryGeneratorAction()
     Geant4.gRunManager.SetUserAction(primary_generator)
 
-    event_action = g4.EventAction()
-    Geant4.gRunManager.SetUserAction(event_action)
-
     stepping_action = g4.SteppingAction()
     Geant4.gRunManager.SetUserAction(stepping_action)
 

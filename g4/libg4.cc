@@ -22,7 +22,6 @@
 #include "DetectorConstruction.hh"
 #include "PhysicsList.hh"
 #include "SteppingAction.hh"
-#include "EventAction.hh"
 #include "PrimaryGeneratorAction.hh"
 
 // GEANT4 //
@@ -51,11 +50,6 @@ BOOST_PYTHON_MODULE(libg4) {
         bases<G4UserSteppingAction>, boost::noncopyable>
         ("SteppingAction", "SteppingAction")
         ;   // End SteppingAction
-
-    class_<EventAction, EventAction*,
-        bases<G4UserEventAction> >
-        ("EventAction", "EventAction")
-        ;   // End EventAction
 
     class_<PrimaryGeneratorAction, PrimaryGeneratorAction*,
         bases<G4VUserPrimaryGeneratorAction>, boost::noncopyable>
