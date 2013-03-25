@@ -50,6 +50,7 @@ PrimaryGeneratorAction::~PrimaryGeneratorAction()
 
 void PrimaryGeneratorAction::GeneratePrimaries(G4Event* event)
 {
+    particle_gun->GeneratePrimaryVertex(event);
 }
 
 
