@@ -22,10 +22,11 @@
 #ifndef _SensitiveDETECTOR_HH
 #define	_SensitiveDETECTOR_HH
 
+#include "globals.hh"
 
 #include "G4VSensitiveDetector.hh"
 #include "G4VUserDetectorConstruction.hh"
-#include "globals.hh"
+#include "G4SDManager.hh"
 
 #include "boost/python.hpp"
 #include "pyublas/numpy.hpp"

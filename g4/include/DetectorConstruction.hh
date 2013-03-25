@@ -46,6 +46,10 @@ class DetectorConstruction : public G4VUserDetectorConstruction
     G4Box* world_solid;
     G4LogicalVolume* world_logical;
     G4VPhysicalVolume* world_physical;
+
+    G4Box* phantom_solid;
+    G4LogicalVolume* phantom_logical;
+    G4VPhysicalVolume* phantom_physical;
 };
 
 #endif

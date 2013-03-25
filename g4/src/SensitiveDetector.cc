@@ -43,7 +43,7 @@
 
 SensitiveDetector::SensitiveDetector(const G4String& name) : G4VSensitiveDetector(name) {
 
-    debug = false;
+    debug = true;
 
     x_dim = 501;
     y_dim = 501;
