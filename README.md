@@ -16,4 +16,6 @@ To do this perform the following:
 ## Usage
 
 Edit `g4/src` and `g4/include` so as to describe your desired simulation.
+
+    python main.py macros/vis.mac
    
