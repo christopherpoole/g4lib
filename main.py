@@ -21,6 +21,8 @@ import sys
 import Geant4
 import g4 
 
+import pyublas
+
 
 if __name__ == "__main__":
     detector_construction = g4.DetectorConstruction()
@@ -41,4 +43,5 @@ if __name__ == "__main__":
     Geant4.gRunManager.BeamOn(1000)
     #Geant4.StartUISession()
 
-    
+    energy = detector_construction.GetEnergyHistogram()
+

@@ -22,6 +22,8 @@
 #ifndef DetectorConstruction_H
 #define DetectorConstruction_H 1
 
+// USER //
+#include "SensitiveDetector.hh"
 
 // GEANT4 //
 #include "G4VUserDetectorConstruction.hh"
@@ -42,6 +44,14 @@ class DetectorConstruction : public G4VUserDetectorConstruction
 
     G4VPhysicalVolume* Construct();
 
+    pyublas::numpy_vector<float> GetEnergyHistogram() {
+        return detector->GetEnergyHistogram();
+    }
+
+    pyublas::numpy_vector<float> GetCountsHistogram() {
+        return detector->GetCountsHistogram();
+    }
+
   private:
     G4Box* world_solid;
     G4LogicalVolume* world_logical;
@@ -50,6 +60,8 @@ class DetectorConstruction : public G4VUserDetectorConstruction
     G4Box* phantom_solid;
     G4LogicalVolume* phantom_logical;
     G4VPhysicalVolume* phantom_physical;
+
+    SensitiveDetector* detector;
 };
 
 #endif

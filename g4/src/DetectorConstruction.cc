@@ -21,7 +21,6 @@
 
 // USER //
 #include "DetectorConstruction.hh"
-#include "SensitiveDetector.hh"
 
 // GEANT4 //
 #include "globals.hh"
@@ -54,7 +53,7 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
     phantom_physical = new G4PVPlacement(0, G4ThreeVector(), phantom_logical, 
                                          "phantom_physical", world_logical, false, 0);
 
-    SensitiveDetector* detector = new SensitiveDetector("phantom_detector");
+    detector = new SensitiveDetector("phantom_detector");
 
     G4SDManager* sd_manager = G4SDManager::GetSDMpointer();
     sd_manager->AddNewDetector(detector);

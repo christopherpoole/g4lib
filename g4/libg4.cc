@@ -39,6 +39,8 @@ BOOST_PYTHON_MODULE(libg4) {
     class_<DetectorConstruction, DetectorConstruction*,
         bases<G4VUserDetectorConstruction> >
         ("DetectorConstruction", "detector")
+        .def("GetEnergyHistogram", &DetectorConstruction::GetEnergyHistogram)
+        .def("GetCountsHistogram", &DetectorConstruction::GetCountsHistogram)
         ;   // End DetectorConstruction
 
     class_<PhysicsList, PhysicsList*,
