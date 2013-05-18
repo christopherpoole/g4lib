@@ -45,17 +45,17 @@ SensitiveDetector::SensitiveDetector(const G4String& name) : G4VSensitiveDetecto
 
     debug = true;
 
-    x_dim = 501;
-    y_dim = 501;
-    z_dim = 501;
+    x_dim = 50;
+    y_dim = 50;
+    z_dim = 50;
 
     x_min = 0;
     y_min = 0;
     z_min = 0;
 
-    x_max = 501;
-    y_max = 501;
-    z_max = 501;
+    x_max = 50;
+    y_max = 50;
+    z_max = 50;
 
     x_res = 2*mm;
     y_res = 2*mm;
