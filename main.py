@@ -40,7 +40,7 @@ if __name__ == "__main__":
     Geant4.gRunManager.Initialize()
     Geant4.gVisManager.Initialize()
     Geant4.gApplyUICommand("/control/execute %s" % sys.argv[1])
-    Geant4.gRunManager.BeamOn(1000)
+    Geant4.gRunManager.BeamOn(10)
     #Geant4.StartUISession()
 
     energy = detector_construction.GetEnergyHistogram()
