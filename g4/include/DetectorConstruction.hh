@@ -52,7 +52,7 @@ class DetectorConstruction : public G4VUserDetectorConstruction
         return detector->GetCountsHistogram();
     }
 
-  private:
+  public:
     G4Box* world_solid;
     G4LogicalVolume* world_logical;
     G4VPhysicalVolume* world_physical;
