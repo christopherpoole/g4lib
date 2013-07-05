@@ -18,4 +18,7 @@ To do this perform the following:
 Edit `g4/src` and `g4/include` so as to describe your desired simulation.
 
     python main.py macros/vis.mac
-   
+
+## GEANT4 Python bindings
+
+Have a look [here](http://christopherpoole.github.io/compiling-and-installing-the-geant4-python-bindings/) for instructions on getting going with the GEANT4 Python bindings.
